@@ -1,2 +1,20 @@
-# ejerciciosLogicaJS
-Ejercicios Logica
+# Videojuego-JS
+Práctica de JS 
+UNIVERSIDAD TECNOLÓGICA DE LA SIERRA HIDALGUENSE
+INGENIERÍA EN DESARROLLO Y GESTIÓN DE SOFTWARE MULTIPLATAFORMA   
+
+
+Desarrollo de Aplicaciones Progresivas
+
+Ejercicios JS
+
+Juan Francisco Hernández
+
+10IDGSM-G1
+
+
+
+
+
+ZACUALTIPÁN DE ÁNGELES, HGO, A 09 DE OCTUBRE 2024.
+
