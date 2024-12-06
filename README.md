@@ -1,4 +1,4 @@
-# Videojuego-JS
+# Actividad Ejercicios de Lógica JS
 Práctica de JS 
 UNIVERSIDAD TECNOLÓGICA DE LA SIERRA HIDALGUENSE
 INGENIERÍA EN DESARROLLO Y GESTIÓN DE SOFTWARE MULTIPLATAFORMA   
@@ -9,6 +9,7 @@ Desarrollo de Aplicaciones Progresivas
 Ejercicios JS
 
 Juan Francisco Hernández
+2021020
 
 10IDGSM-G1
 
