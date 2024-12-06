@@ -1,101 +1,67 @@
 <!DOCTYPE html>
 <html lang="es">
-
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, ini
-tial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ejercicios de Lógica en JavaScript</title>
 </head>
-
 <body>
-   
     <h1>Aprendiendo Javascript</h1>
     <p>Ejercicios de Lógica en JavaScript</p>
-    <!-- Ejercicio 1: Manipulación del DOM -->
-    <h2>1. Manipulación del DOM</h2>
-    <p id="texto">Este es el texto original.</p>
-    <button id="botonCambiar">Cambiar Texto</button>
-    <hr>
 
-    <!-- Ejercicio 2: Crear elementos en el DOM -->
-    <h2>2. Crear elementos en el DOM</h2>
-    <ul id="lista">
-        <li>Elemento 1</li>
-        <li>Elemento 2</li>
-    </ul>
-    <button id="botonAgregar">Agregar Elemento</button>
-    <hr>
-
-    <!-- Ejercicio 3: Eliminar elementos del DOM -->
-    <h2>3. Eliminar elementos del DOM</h2>
-    <ul id="listaEliminar">
-        <li>Elemento 1</li>
-        <li>Elemento 2</li>
-        <li>Elemento 3</li>
-    </ul>
-    <button id="botonEliminar">Eliminar Último Elemento</button>
-    <hr>
-
-    <!-- Ejercicio 4: Eventos (detectar teclas presionadas) -->
-    <h2>4. Eventos (detectar teclas presionadas)</h2>
-    <p>Presiona cualquier tecla para verlo en la consola.</p>
-    <hr>
-
-    <!-- Ejercicio 5: Formularios (validación de campos) -->
-    <h2>5. Validación de Formularios</h2>
-    <form id="miFormulario">
-        <input type="text" id="nombre" placeholder="Nombre"><br>
-        <input type="email" id="email" placeholder="Email"><br>
-        <button type="submit">Enviar</button>
-    </form>
-
-
+    <!-- Enlace a los scripts de los ejercicios -->
     
-    <script>
-        // Ejercicio 1: Manipulación del DOM
-        document.getElementById('botonCambiar').addEventListener('click', function () {
-            document.getElementById('texto').textContent = "¡Texto cambiado!";
-        });
+    <!-- Nivel 1: Fundamentos -->
+    <script src="js/ejercicio1.js"></script> <!-- Variables y tipos de datos -->
+    <script src="js/ejercicio2.js"></script> <!-- Operaciones matemáticas -->
+    <script src="js/ejercicio3.js"></script> <!-- Concatenación de cadenas -->
+    <script src="js/ejercicio4.js"></script> <!-- Condicionales -->
+    <script src="js/ejercicio5.js"></script> <!-- Comparaciones -->
+    <script src="js/ejercicio6.js"></script> <!-- Ciclos for -->
+    <script src="js/ejercicio7.js"></script> <!-- Ciclo while -->
+    <script src="js/ejercicio8.js"></script> <!-- Ciclo for y suma -->
+    <script src="js/ejercicio9.js"></script> <!-- Arrays básicos -->
+    <script src="js/ejercicio10.js"></script> <!-- Acceder a un array -->
 
-        // Ejercicio 2: Crear elementos en el DOM
-        document.getElementById('botonAgregar').addEventListener('click', function () {
-            let nuevoElemento = document.createElement('li');
-            nuevoElemento.textContent = 'Nuevo Elemento';
-            document.getElementById('lista').appendChild(nuevoElemento);
-        });
+    <!-- Nivel 2: Interacción con el usuario -->
+    <script src="js/ejercicio11.js"></script> <!-- Entrada de usuario -->
+    <script src="js/ejercicio12.js"></script> <!-- Verificación de edad -->
+    <script src="js/ejercicio13.js"></script> <!-- Número par o impar -->
+    <script src="js/ejercicio14.js"></script> <!-- Conversión de temperaturas -->
+    <script src="js/ejercicio15.js"></script> <!-- Validación de entrada -->
+    <script src="js/ejercicio16.js"></script> <!-- Palíndromos -->
 
-        // Ejercicio 3: Eliminar elementos del DOM
-        document.getElementById('botonEliminar').addEventListener('click', function () {
-            let lista = document.getElementById('listaEliminar');
-            if (lista.lastElementChild) {
-                lista.removeChild(lista.lastElementChild);
-            }
-        });
+    <!-- Nivel 3: Manipulación de arrays y objetos -->
+    <script src="js/ejercicio17.js"></script> <!-- Array invertido -->
+    <script src="js/ejercicio18.js"></script> <!-- Suma de elementos de un array -->
+    <script src="js/ejercicio19.js"></script> <!-- Array de números pares -->
+    <script src="js/ejercicio20.js"></script> <!-- Objetos básicos -->
+    <script src="js/ejercicio21.js"></script> <!-- Modificar propiedades de un objeto -->
+    <script src="js/ejercicio22.js"></script> <!-- Buscar en un array -->
+    <script src="js/ejercicio23.js"></script> <!-- Agregar y eliminar elementos en arrays -->
 
-        // Ejercicio 4: Eventos (detectar teclas presionadas)
-        document.addEventListener('keydown', function (event) {
-            console.log("Tecla presionada: " + event.key);
-        });
+    <!-- Nivel 4: Funciones -->
+    <script src="js/ejercicio24.js"></script> <!-- Funciones básicas -->
+    <script src="js/ejercicio25.js"></script> <!-- Funciones y condicionales -->
+    <script src="js/ejercicio26.js"></script> <!-- Factorial -->
+    <script src="js/ejercicio27.js"></script> <!-- Promedio de un array -->
+    <script src="js/ejercicio28.js"></script> <!-- Máximo y mínimo en un array -->
+    <script src="js/ejercicio29.js"></script> <!-- Contar vocales -->
 
-        // Ejercicio 5: Validación de Formularios
-        document.getElementById('miFormulario').addEventListener('submit', function (event) {
-            let nombre = document.getElementById('nombre').value;
-            let email = document.getElementById('email').value;
+    <!-- Nivel 5: Temas intermedios -->
+    <script src="js/ejercicio30.js"></script> <!-- Funciones anónimas -->
+    <script src="js/ejercicio31.js"></script> <!-- Callbacks -->
+    <script src="js/ejercicio32.js"></script> <!-- Funciones flecha -->
+    <script src="js/ejercicio33.js"></script> <!-- Clases básicas -->
+    <script src="js/ejercicio34.js"></script> <!-- Herencia -->
+    <script src="js/ejercicio35.js"></script> <!-- Objetos y métodos -->
 
-            if (nombre === "" || email === "") {
-                alert("Todos los campos deben estar llenos.");
-                event.preventDefault(); // Evita el envío del formulario si hay campos vacíos
-            }
-        });
-    </script>
+    <!-- Nivel 6: Manejo del DOM -->
+    <script src="js/ejercicio36.js"></script> <!-- Manipulación del DOM -->
+    <script src="js/ejercicio37.js"></script> <!-- Crear elementos en el DOM -->
+    <script src="js/ejercicio38.js"></script> <!-- Eliminar elementos del DOM -->
+    <script src="js/ejercicio39.js"></script> <!-- Eventos -->
+    <script src="js/ejercicio40.js"></script> <!-- Formularios -->
 
-
-    <!-- Incluirás los archivos de JavaScript de cada ejer
-cicio aquí -->
-    <script src="js/ejercicio36.js"></script>
-    <!-- <script src="js/ejercicio2.js"></script> -->
-    <!-- <script src="js/ejercicio1.js"></script> -->
 </body>
-
 </html>
